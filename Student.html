@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Student Details</title>
+
+
+    </head>
+    <script>
+
+        class Student
+        {
+            constructor(name,roll_no)
+            {
+              this.roll_no=roll_no;
+              this.name=name;
+            }
+
+            printStudentDetail()
+            {
+               document.writeln("<b>Name</b>: "+this.name+"<br>"+"<b>Roll no</b>: "+this.roll_no+"<br>")
+            }
+        }
+        Student.prototype.subject=function()
+            {
+                document.writeln("<b>Class:</b> "+"D15A")
+            }
+
+            name=prompt("Name : ");
+            roll_no=prompt("Roll no :");
+
+              try{
+                 if(roll_no==0) throw "Roll no cannot be zero";
+                 else
+                 {
+                    var s1=new Student(name,roll_no);
+                    document.writeln("<u>Student Details</u><br>");
+                    s1.printStudentDetail();
+                    s1.subject();
+                 }
+              }
+              catch(e){
+                document.writeln(e)
+                    }
+    </script>
+    <body>
+    </body>
+</html>
+
