@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>T-Shirt</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body  style="border: 5px solid black; box-sizing: border-box; background-color:rgb(247, 233, 245)";>
+    <h1 ><I><u> Customized T-shirts:</u></I></h1>
+    <div class="first" style=" width: 1000px;position: absolute; top: 20%; left:15%;  display: flex; box-shadow: 0 30px 30px 0 rgba(3, 3, 255, 0.08);">
+    <div class="Image" style="width:55%; background: linear-gradient(to right, (#0109ac, #01dbdf)); padding:30px 25px; border-top-left-radius:6px; border-bottom-left-radius:6px; text-align: center;"><img src="pic2.jpg" height="500px" width="450px">
+    <h4><I>Customized Half Sleeve Men’s Cotton T-Shirt</I></h4></div>
+    <div class="Form" style= "width:45%; padding:30px 25px; border-top-left-radius:6px; border-bottom-left-radius:6px;">
+    <form id="form1">
+        <font size="5px">
+            <label for="color">Pick a color for T-Shirt:</label>
+            <input type="color" id="color" value="#0066FF"><br><br>
+            <label for=" Tagline"> Tagline:</label>
+            <textarea rows="1" cols="40" id="Tagline" name=" Tagline"
+                placeholder="Enter the Tagline to be printed on Tshirt"></textarea><br><br>
+            <label for="color">Pick a color of Tagline:</label>
+            <input type="color" id="color" value="#0066FF"><br><br>
+            <label for="size">Choose a size:</label>
+            <select id="size" name="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select><br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity of the Tshirt"><br><br>
+            <label for="date">Delivery date:</label>
+            <input type="date" id="date" name="date" placeholder="Enter delivery date of the Tshirt"><br><br>
+            <label for="name">Name :</label><br>
+            <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+            <label for="phone">Phone no :</label><br>
+            <input type="number" id="phone" placeholder="enter your phone no" required><br><br>
+            <label for="email">Email Id:</label><br>
+            <input type="email"  id="email" placeholder="enter your email address" required><br><br>
+            <label for="address"> Address:</label><br>
+            <textarea rows="4" cols="40" name="address" id="address" placeholder="enter address here"></textarea><br><br>
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode"><br><br>
+        </font>
+    </form>
+            <button type="submit" form="form1" onclick="myFunction()" ><font size="4px">Click to place order</font></button>
+        </div></div>
+        <script src="validations.js"></script>
+</body>
+
+</html>
